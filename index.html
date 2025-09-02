@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Victor - Engenheiro Civil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container text-center">
+        <h1>Portfólio de Victor</h1>
+        <p class="lead">Engenheiro Civil</p>
+        <p>Com experiência em planejamento, execução e gerenciamento de projetos de construção civil. Comprometido com a
+            qualidade, sustentabilidade e inovação nas obras. Veja os projetos que já realizei!</p>
+        
+        <div>
+            <span class="badge bg-secondary">Planejamento</span>
+            <span class="badge bg-secondary">Execução</span>
+            <span class="badge bg-secondary">Gerenciamento</span>
+            <span class="badge bg-secondary">Sustentabilidade</span>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus Projetos</h2>
+        <div class="row" id="projects">
+            <!-- Projeto 1 -->
+            <div class="col-md-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="1">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Construção de Prédio Comercial</h5>
+                        <p class="card-text">Projeto de construção de um prédio comercial de 10 andares, com foco em
+                            eficiência energética e acessibilidade.</p>
+                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Reforma de Infraestrutura Urbana</h5>
+                        <p class="card-text">Reforma de ruas e calçadas de um bairro central, com foco em drenagem
+                            pluvial e melhorias no tráfego.</p>
+                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4 project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ponte Sobre o Rio X</h5>
+                        <p class="card-text">Projeto de uma ponte de 150 metros, com tecnologias para resistir a
+                            condições climáticas extremas.</p>
+                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <!-- Conteúdo do projeto será carregado dinamicamente -->
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="liveProject" class="btn btn-primary" target="_blank">Ver projeto ao vivo</a>
+                    <a href="#" id="projectCode" class="btn btn-secondary" target="_blank">Ver código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <p><a href="mailto:victor.engcivil@gmail.com" class="btn btn-link">Email</a></p>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Victor</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

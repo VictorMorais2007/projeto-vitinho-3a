@@ -1,0 +1,70 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+header .lead {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #f8f9fa;
+}
+
+.project-card {
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.project-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para os cards de projeto */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card .btn-link {
+    color: #007bff;
+}
+
+/* Ajustes para o footer */
+footer p {
+    margin: 0;
+}
